@@ -1,0 +1,18 @@
+YOLOv7 surpasses all the object detcting algorithms in the range of 5 FPS to 160FPS and has the highest accuracy of 56.8% among all the object detecting algorithms . It outperformers all its previous previous algorithms such as YOLOv5 , YOLOv4
+It uses  model re-parametrization techniques(merging of various computational modules into one at interface stage). 
+It trains multiple identical blocks with different sets of data and then avergaes the weights of multiple trained models . It also performs a weighted average of weights of different modules at different iteration number. 
+It follows a Extented ELAN structure . The structure uses expand , shuffle , merge cardinality to contineously enhance the learning capacity of the orignal gradient path . The stucture is desighned in such a way that the whole structure is divided into group  consisiting of computational layers . It computational layer has computational blocks . The feature map calculated by each computational block is shuffed into g groups depending of the parameter g . At last , all g groups , feature maps are merged . This reduced the overall computational workload and the speed of training increases .
+For label assighnment it follows a technique which considers network prediction results together with the ground truth .
+
+It uses Microsoft COCO datset to conduct and validiate the object detection method , all models are build from scratch
+
+Our approach --
+
+We use the dermnet dataset in order to train our model , The dataset contains 10000+ images of different diseases . 
+For this paper point of view we consider 100 images of acne disease , and 100 images of eczema disease for training purpose and 20images of each for labelling pupose . 
+Using labelImg we label all the 240 images. All the labelelled images are converted into .txt files and stored in a data folder 
+In order to train the module , we define the number of class as 2 [acne and eczema] 
+The image size is set for 640*640 and a batch size of 16 is kept .
+We set the number of epochs to 100 and train the model .
+All the labeled images are trained and a best.pt model is generated . 
+The model is used for detection.

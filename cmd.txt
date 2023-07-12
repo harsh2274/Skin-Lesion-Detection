@@ -1,0 +1,9 @@
+
+Threads Time (ms)  Speedup
+1       &6774.425000    &1.000000
+2       &3694.641667    &1.879939
+4       &2175.158333    &3.231367
+8       &1771.770833    &4.032418
+
+
+python train.py --workers 1 --device 0 --batch-size 8 --epochs 100 --img 640 640 --data data/custom_yaml.yaml --hyp data/hyp.scratch.custom.yaml --cfg cfg/training/yolov7-custom.yaml --name yolov7-custom --weights yolov7.pt
