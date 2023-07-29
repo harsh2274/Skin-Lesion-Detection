@@ -1,0 +1,40 @@
+//Skin Disease Flutter App
+//This is a skin disease detection app built using Flutter. It is designed to help users identify common skin diseases by taking a picture of the affected area and answering a few questions.
+
+//Requirements
+
+Before you can run this app, you will need to make sure you have the following installed on your system:
+
+Flutter SDK
+Android Studio or Xcode
+Android or iOS emulator or device
+Installation
+Clone the repository from Google Drive to your local machine.
+Open a terminal window and navigate to the root directory of the project.
+Run the following command to download and install the required packages:
+
+flutter pub get  
+
+
+Running the App
+To run the app, you will need to follow the steps below:
+
+Open a terminal window and navigate to the root directory of the project.
+Connect your Android or iOS device to your computer or launch an emulator.
+
+Run the following command to launch the app:
+flutter run
+
+
+The app should now start up on your device or emulator.
+
+Usage
+To use the app, follow these steps:
+
+Launch the app on your device or emulator.
+Take a picture of the affected area or select one from your device's gallery.
+Answer the questions asked by the app to help identify the skin disease.
+View the results of the analysis and follow any recommended actions.
+
+Contributing
+Contributions are always welcome! If you have any suggestions for improvements or bug fixes, please inform us.
